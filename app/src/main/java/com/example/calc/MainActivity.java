@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        VI = findViewById(R.id.VFin);
-        VF = findViewById(R.id.VIni);
+        VF = findViewById(R.id.VFin);
+        VI = findViewById(R.id.VIni);
         result = findViewById(R.id.result);
     }
     public void calculoSoma(View v){
@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public void calculoDivisao(View v){
         int VIn = Integer.parseInt(VI.getText().toString());
         int VFi = Integer.parseInt(VF.getText().toString());
-        result.setText((VIn/VFi)+"");
+        float resultado = VIn-VFi;
+        result.setText(resultado+"");
     }
     public void calculoMultiplicacao(View v){
         int VIn = Integer.parseInt(VI.getText().toString());
